@@ -1,0 +1,15 @@
+{
+  "name": "iyz-pc",
+  "version": "1.0.0",
+  "description": "重构",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dreamapple",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "yargs": "^3.31.0"
+  }
+}
