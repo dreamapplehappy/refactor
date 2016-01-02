@@ -4,8 +4,12 @@
  * */
 
 var args = require('../node_modules/yargs')
+    /* 计算boolean变量值 */
     .count('verbose')
     .alias('v', 'verbose')
+    /* 参数需求说明 */
+    .usage('参数说明: $0 -w [num] -h [num]')
+    .demand(['w', 'h'])
     .argv;
 
 
@@ -29,6 +33,8 @@ restArgs(args.a, args.b); // 显示多余的程序参数
  * 布尔值的个数: 3
  */
 countBoolean(args.v); // 计算布尔值的个数
+
+testDemand(args.w, args.h); // 测试yargs的参数需求
 
 
 /**
@@ -68,3 +74,16 @@ function restArgs(a, b) {
 function countBoolean(v) {
     console.log('布尔值的个数: ' + v);
 }
+
+/**
+ * 测试yargs的参数需求功能
+ * @param w
+ * @param h
+ */
+function testDemand(w, h) {
+    console.log('长方形的面积是: ' + w * h);
+}
+
+/**
+ * ====================== 2016.1.2 =================
+ */
