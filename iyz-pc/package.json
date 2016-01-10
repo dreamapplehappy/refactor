@@ -11,5 +11,8 @@
   "dependencies": {
     "gulp": "^3.9.0",
     "yargs": "^3.31.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.0"
   }
 }
